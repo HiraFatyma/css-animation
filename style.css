@@ -1,0 +1,168 @@
+.main{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+
+.card1{
+    width: 150px;
+    height: 190px;
+    border: 2px solid;
+    position: relative;
+    transition: all 1s linear;
+    transform-style: preserve-3d;
+    border-radius: 30px;
+   
+}
+
+.front-card{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(./uno1.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: 2;
+    backface-visibility: hidden;
+    border-radius: 30px;
+}
+.back-card{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: powderblue;
+    border-radius: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card1:hover{
+    transform: rotateY(180deg);
+}
+.card2{
+    width: 150px;
+    height: 190px;
+    border: 2px solid;
+    position: relative;
+    transition: all 1s linear;
+    transform-style: preserve-3d;
+    border-radius: 30px;
+}
+.card2:hover{
+    transform: rotateY(180deg);
+}
+.card3{
+    width: 150px;
+    height: 190px;
+    border: 2px solid;
+    position: relative;
+    transition: all 1s linear;
+    transform-style: preserve-3d;
+    border-radius: 30px;
+}
+.card3:hover{
+    transform: rotateY(180deg);
+}
+.card4{
+    width: 150px;
+    height: 190px;
+    border: 2px solid;
+    position: relative;
+    transition: all 1s linear;
+    transform-style: preserve-3d;
+    border-radius: 30px;
+}
+.card4:hover{
+    transform: rotateY(180deg);
+}
+.card5{
+    width: 150px;
+    height: 190px;
+    border: 2px solid;
+    position: relative;
+    transition: all 1s linear;
+    transform-style: preserve-3d;
+    border-radius: 30px;
+}
+.card5:hover{
+    transform: rotateY(180deg);
+}
+.card6{
+    width: 150px;
+    height: 190px;
+    border: 2px solid;
+    position: relative;
+    transition: all 1s linear;
+    transform-style: preserve-3d;
+    border-radius: 30px;
+}
+.card6:hover{
+    transform: rotateY(180deg);
+}
+
+.text-slide{
+
+    margin-left: 300px;
+
+}
+.text-slide h2{
+    color: rgb(117, 117, 234);
+    animation: 4s text-slide;
+    animation-iteration-count: infinite;
+}
+@keyframes text-slide{
+from{
+    margin-left: 300px;
+}
+to{
+    margin-left:0px ;
+}
+}
+h3{
+    color: rgb(119, 119, 198);
+    margin-left: 300px;
+    margin-top: 20px;
+    animation-name: text;
+    animation-duration: 5s;
+    animation-iteration-count:infinite ;
+}
+@keyframes text{
+    0%{font-size: 10px;
+
+    }
+    30%{
+        font-size: 20px;
+    }
+    50%{
+        font-size:30px ;
+    }
+    100%{
+        font-size: 10px;
+    }
+    from{
+        margin-left: 300px;
+    }
+    to{
+        margin-left:100px ;
+    }
+}
+h1{
+    color: rgba(158, 79, 218, 0.49);
+    animation: 5s moving;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes moving{
+    from{
+        margin-left: 700px;
+    }
+    to{
+        margin-left:0px ;
+    }
+}
